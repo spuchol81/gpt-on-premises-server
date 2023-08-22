@@ -16,7 +16,7 @@ RUN pip install \
     -r requirements.txt
 
 COPY . .
-RUN chown -R admin:admin /app
+RUN chown -R runuser:runuser /app
 RUN chmod 755 /app
 USER runuser
 ENTRYPOINT [ "python", "privateGPT.py" ]
