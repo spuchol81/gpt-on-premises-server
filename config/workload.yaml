@@ -23,3 +23,14 @@ spec:
       ref:
         branch: main
       url: https://github.com/spuchol81/gpt-on-premises-server.git
+  env:
+  - name: PERSIST_DIRECTORY
+    value: db
+  - name: MODEL_TYPE
+    value: GPT4All
+  - name: MODEL_PATH
+    value: models/ggml-gpt4all-j-v1.3-groovy.bin
+  - name: EMBEDDINGS_MODEL_NAME
+    value: all-MiniLM-L6-v2
+  - name: MODEL_N_CTX
+    value: 1000
